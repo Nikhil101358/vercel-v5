@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
+  }
+  
+  .container {
+    padding-top: 100px;
+  }
+  
+  h1 {
+    font-size: 3em;
+    animation: pop 1s ease-out;
+  }
+  
+  button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ff5e57;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1em;
+  }
+  
+  button:hover {
+    background-color: #ff2e2e;
+  }
+  
+  #surprise {
+    margin-top: 30px;
+    font-size: 1.5em;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  @keyframes pop {
+    from {
+      transform: scale(0);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+  
+  canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+  }
+  
